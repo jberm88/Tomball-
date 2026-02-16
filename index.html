@@ -1,16 +1,186 @@
-<div id="parks">
-  <h2>Parks</h2>
-  <div class="gallery">
-    <img src="park1.jpg" alt="Park 1">
-    <img src="park2.jpg" alt="Park 2">
-    <img src="park3.jpg" alt="Park 3">
-  </div>
-</div>
-<div id="downtown-landmarks">
-  <h2>Downtown Landmarks</h2>
-  <div class="gallery">
-    <img src="landmark1.jpg" alt="Landmark 1">
-    <img src="landmark2.jpg" alt="Landmark 2">
-    <img src="landmark3.jpg" alt="Landmark 3">
-  </div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomball Texas - Local Business Directory & Community Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>🏠 Tomball TX</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#parks">Parks</a></li>
+                <li><a href="#downtown">Downtown</a></li>
+                <li><a href="#businesses">Businesses</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Tomball, Texas</h1>
+            <p>Connect with Local Businesses & Community</p>
+            <button class="cta-button" onclick="document.getElementById('businesses').scrollIntoView({behavior: 'smooth'})">Explore Local Businesses</button>
+        </div>
+    </section>
+
+    <!-- Parks Section -->
+    <section id="parks" class="parks">
+        <div class="container">
+            <h2>Parks & Recreation</h2>
+            <div class="parks-grid">
+                <div class="park-card">
+                    <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=400&h=300&fit=crop" alt="Burroughs Park">
+                    <h3>Burroughs Park</h3>
+                    <p><strong>8+ miles of trails</strong></p>
+                    <p>Large wooded park with scenic lake, picnic areas, dog park, boardwalk, sports fields, and playgrounds.</p>
+                    <a href="#" class="btn-learn-more">Learn More</a>
+                </div>
+                <div class="park-card">
+                    <img src="https://images.unsplash.com/photo-1469022785867-19ddc9b431f0?w=400&h=300&fit=crop" alt="Kleb Woods Nature Preserve">
+                    <h3>Kleb Woods Nature Preserve</h3>
+                    <p><strong>Historic Farm Site</strong></p>
+                    <p>Hiking trails, bird-watching, educational programs, and historic farm buildings from the early 1900s.</p>
+                    <a href="#" class="btn-learn-more">Learn More</a>
+                </div>
+                <div class="park-card">
+                    <img src="https://images.unsplash.com/photo-1505228395891-9a51e7e86e81?w=400&h=300&fit=crop" alt="Jerry Matheson Park">
+                    <h3>Jerry Matheson Park</h3>
+                    <p><strong>Family Favorite</strong></p>
+                    <p>Splash pad, playgrounds, open play areas, and shaded walking paths perfect for families.</p>
+                    <a href="#" class="btn-learn-more">Learn More</a>
+                </div>
+                <div class="park-card">
+                    <img src="https://images.unsplash.com/photo-1517457373614-b7152f800fd1?w=400&h=300&fit=crop" alt="Juergens Park">
+                    <h3>Juergens Park</h3>
+                    <p><strong>Community Gathering</strong></p>
+                    <p>Shaded picnic areas, open green lawns, and space for family games and community events.</p>
+                    <a href="#" class="btn-learn-more">Learn More</a>
+                </div>
+                <div class="park-card">
+                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=300&fit=crop" alt="Theis Attaway Nature Center">
+                    <h3>Theis Attaway Nature Center</h3>
+                    <p><strong>Nature & Birdwatching</strong></p>
+                    <p>Walking trails, pond, and forested surroundings perfect for relaxing strolls and nature observation.</p>
+                    <a href="#" class="btn-learn-more">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Downtown Section -->
+    <section id="downtown" class="downtown">
+        <div class="container">
+            <h2>Downtown Tomball Landmarks</h2>
+            <div class="downtown-grid">
+                <div class="landmark-card">
+                    <img src="https://images.unsplash.com/photo-1518156677180-95a2893f3e9f?w=400&h=300&fit=crop" alt="Tomball Railroad Depot">
+                    <h3>Tomball Railroad Depot</h3>
+                    <p><strong>Historic Icon</strong></p>
+                    <p>Iconic historic railroad depot featuring model train displays, railroad memorabilia, and event grounds central to town festivals.</p>
+                    <a href="#" class="btn-learn-more">Visit</a>
+                </div>
+                <div class="landmark-card">
+                    <img src="https://images.unsplash.com/photo-1464207687429-7505649dae38?w=400&h=300&fit=crop" alt="Tomball Museum Center">
+                    <h3>Tomball Museum Center</h3>
+                    <p><strong>Heritage & History</strong></p>
+                    <p>Historic preserved structures including homes, church, and schoolhouse offering guided tours through Tomball's pioneer and oil-town heritage.</p>
+                    <a href="#" class="btn-learn-more">Visit</a>
+                </div>
+                <div class="landmark-card">
+                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop" alt="Main Street Old Town">
+                    <h3>Main Street - Old Town</h3>
+                    <p><strong>Charming Shops & Cafes</strong></p>
+                    <p>Lined with locally owned boutiques, cafes, antique shops, and art galleries preserving early 1900s architecture.</p>
+                    <a href="#" class="btn-learn-more">Explore</a>
+                </div>
+                <div class="landmark-card">
+                    <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=400&h=300&fit=crop" alt="Tomball Farmers Market">
+                    <h3>Tomball Farmers Market</h3>
+                    <p><strong>Saturdays Downtown</strong></p>
+                    <p>Community event every Saturday morning with 60+ local vendors, food trucks, and live music celebrating local businesses.</p>
+                    <a href="#" class="btn-learn-more">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Businesses Section -->
+    <section id="businesses" class="businesses">
+        <div class="container">
+            <h2>Featured Local Businesses</h2>
+            <div class="business-grid">
+                <div class="business-card">
+                    <h3>Business Name</h3>
+                    <p>Category: Retail</p>
+                    <p>Description of the business and services offered to the Tomball community.</p>
+                    <a href="#" class="btn-learn-more">Learn More</a>
+                </div>
+                <div class="business-card">
+                    <h3>Business Name</h3>
+                    <p>Category: Services</p>
+                    <p>Description of the business and services offered to the Tomball community.</p>
+                    <a href="#" class="btn-learn-more">Learn More</a>
+                </div>
+                <div class="business-card">
+                    <h3>Business Name</h3>
+                    <p>Category: Food & Dining</p>
+                    <p>Description of the business and services offered to the Tomball community.</p>
+                    <a href="#" class="btn-learn-more">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Tomball Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Tomball</h2>
+            <div class="about-content">
+                <p>
+                    Tomball is a vibrant community in Northwest Harris County, Texas. 
+                    Known for its friendly atmosphere, growing economy, and diverse business landscape, 
+                    Tomball is the perfect place to do business and build a life.
+                </p>
+                <ul class="highlights">
+                    <li>✓ Population: 12,000+</li>
+                    <li>✓ Growing Tech Hub</li>
+                    <li>✓ Strong Community Support</li>
+                    <li>✓ Perfect Location Near Houston</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Tomball, Texas Local Business Directory. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
