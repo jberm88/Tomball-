@@ -1,44 +1,98 @@
-/* General Styles */
+/* Styles for all sections including responsive design */
+
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
-/* Header */
-header {
-    background-color: #4CAF50;
+/* Navbar Styles */
+.navbar {
+    background-color: #333;
     color: white;
     padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
     text-align: center;
 }
 
 /* Parks Section */
 .parks {
-    background-color: #e9f7ef;
-    padding: 20px;
-    margin: 10px;
+    padding: 50px;
+    background-color: #f4f4f4;
 }
-
 .parks h2 {
-    color: #2e7d32;
+    color: #333;
 }
 
-.parks p {
-    line-height: 1.6;
+/* Downtown Landmarks Section */
+.landmarks {
+    padding: 50px;
+    background-color: #fff;
+}
+.landmarks h2 {
+    color: #333;
 }
 
-/* Downtown Section */
-.downtown {
-    background-color: #fce4ec;
-    padding: 20px;
-    margin: 10px;
+/* Businesses Section */
+.businesses {
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+.businesses h2 {
+    color: #333;
 }
 
-downtown h2 {
-    color: #c2185b;
+/* About Section */
+.about {
+    padding: 50px;
+    background-color: #fff;
+}
+.about h2 {
+    color: #333;
 }
 
-.downtown p {
-    line-height: 1.6;
+/* Contact Section */
+.contact {
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+.contact h2 {
+    color: #333;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .hero {
+        height: 50vh;
+    }
+    .parks, .landmarks, .businesses, .about, .contact {
+        padding: 20px;
+    }
 }
